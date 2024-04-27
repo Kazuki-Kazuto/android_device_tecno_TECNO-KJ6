@@ -5,5 +5,11 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-soong_namespace {
+cc_library_shared {
+    name: "libmtk_bsg",
+    vendor: true,
+    recovery_available: true,
+    srcs: ["*.c"],
+
+    header_libs: ["device_kernel_headers"],
 }
